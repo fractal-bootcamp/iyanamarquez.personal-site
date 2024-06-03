@@ -1,6 +1,9 @@
+import BackButton from "~/components/BackButton";
+
 export default function About() {
   return (
     <div>
+      <BackButton />
       <h1>About me</h1>
       <img
         style={{ width: 100, height: 50 }}

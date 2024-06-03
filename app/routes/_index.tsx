@@ -14,6 +14,7 @@ export default function Index() {
       <h1 className="text-3xl font-bold underline">Hello world!</h1>
       <img src="" alt="picture of me"></img>
       <a href="/about">About</a>
+      <a href="/projects">Projects</a>
     </div>
   );
 }
