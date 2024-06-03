@@ -30,7 +30,7 @@ export default function Header() {
           <div className="flex items-center justify-between">
             <div className="mr-3"></div>
             <div className="hidden h-6 text-2xl font-semibold sm:block">
-              Iyana M
+              Iyana M.
             </div>
           </div>
         </a>

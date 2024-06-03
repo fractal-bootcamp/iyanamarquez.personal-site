@@ -39,10 +39,10 @@ export default function TestCarousel() {
   ];
   return (
     <div className=" flex justify-center">
-      <div className="max-w-lg carousel carousel-center rounded-box">
+      <div className="max-w-lg carousel carousel-center rounded-box shadow-xl">
         {projects.map((x) => {
           return (
-            <div className="card w-96 bg-base-100 shadow-xl carousel-item h-full">
+            <div className="card w-96 shadow-xl carousel-item h-full gap-4 mx-4">
               <figure className="px-10 pt-10">
                 <img src={x.img} alt="Shoes" className="rounded-xl" />
               </figure>
