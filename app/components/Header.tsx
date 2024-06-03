@@ -19,7 +19,7 @@ export default function Header() {
       link: "/contact",
     },
     {
-      name: "Carousel",
+      name: "Carousel (in test)",
       link: "/carousel",
     },
   ];
