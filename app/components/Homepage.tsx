@@ -13,7 +13,7 @@ export default function HomePage() {
             <h4 className="block mb-2 text-2xl font-semibold text-blue-gray-900">
               Iyana Marquez
             </h4>
-            <p className="block font-sans text-base antialiased font-medium leading-relaxed text-transparent bg-clip-text bg-gradient-to-tr from-blue-gray-600 to-blue-gray-400 text-slate-950	">
+            <p className="block font-sans text-base antialiased font-medium leading-relaxed bg-clip-text bg-gradient-to-tr from-blue-gray-600 to-blue-gray-400 text-slate-950	">
               Gamer / Coder
             </p>
           </div>
@@ -23,7 +23,7 @@ export default function HomePage() {
                 className="text-sm transition ease-in-out delay-150 bg-slate-500 hover:-translate-y-1 hover:scale-110 duration-300"
                 target="_blank"
                 rel="noopener noreferrer"
-                href="https://github.com"
+                href="https://github.com/yayakix"
               >
                 <span className="sr-only">github</span>
                 {/* Github svg */}
@@ -40,7 +40,7 @@ export default function HomePage() {
                 className="text-sm text-gray-500 transition hover:text-gray-600"
                 target="_blank"
                 rel="noopener noreferrer"
-                href="https://www.linkedin.com"
+                href="https://www.linkedin.com/in/iyana-marquez"
               >
                 <span className="sr-only">linkedin</span>
                 {/* Linkedin svg */}
