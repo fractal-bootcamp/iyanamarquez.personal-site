@@ -45,7 +45,7 @@ export default function ProjectsPage() {
       <h1 className="text-3xl font-bold underline flex items-center justify-center">
         Projects
       </h1>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-4 ">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-4">
         {projects.map((x) => {
           return (
             <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow relative">
@@ -58,11 +58,13 @@ export default function ProjectsPage() {
                     {x.name}
                   </h5>
                 </a>
-                <p className="mb-3 font-normal text-gray-700 ">{x.desc}</p>
-                <div className="flex justify-start	">
+                <p className="mb-3 font-normal text-gray-700 block">{x.desc}</p>
+                {/* Buttons container */}
+                <div style={{ height: 50 }}></div>
+                <div className="absolute bottom-2">
                   <a
                     href={x.link}
-                    className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 "
+                    className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-pink-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 mr-3 "
                     target="_blank"
                   >
                     Visit{" "}
