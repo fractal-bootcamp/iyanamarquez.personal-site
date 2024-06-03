@@ -18,6 +18,10 @@ export default function Header() {
       name: "Contact",
       link: "/contact",
     },
+    {
+      name: "Carousel",
+      link: "/carousel",
+    },
   ];
   return (
     <header className="flex items-center justify-between py-10 ">

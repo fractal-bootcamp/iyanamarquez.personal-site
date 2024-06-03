@@ -2,8 +2,37 @@ import type { Config } from "tailwindcss";
 
 export default {
   content: ["./app/**/*.{js,jsx,ts,tsx}"],
-  theme: {
-    extend: {},
+  daisyui: {
+    themes: [
+      {
+        mytheme: {
+          primary: "#e9d5ff",
+
+          secondary: "#e9d5ff",
+
+          accent: "#c4b5fd",
+
+          neutral: "#c4b5fd",
+
+          "base-100": "#f3f4f6",
+
+          info: "#93c5fd",
+
+          success: "#c4b5fd",
+
+          warning: "#fb7185",
+
+          error: "#ec4899",
+        },
+      },
+    ],
   },
-  plugins: [],
+  theme: {
+    extend: {
+      animationDuration: {
+        "1s": "1s",
+      },
+    },
+  },
+  plugins: [require("daisyui")],
 } satisfies Config;
