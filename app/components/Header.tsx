@@ -1,42 +1,52 @@
+import BackButton from "./BackButton";
+
 export default function Header() {
+  const navLinks = [
+    {
+      name: "Home",
+      link: "/",
+    },
+    {
+      name: "About",
+      link: "/about",
+    },
+    {
+      name: "Projects",
+      link: "/projects",
+    },
+    {
+      name: "Contact",
+      link: "/contact",
+    },
+  ];
   return (
-    <div>
-      <nav className="flex items-center justify-between flex-wrap bg-green-500 p-6">
-        <ul className="flex border-b">
-          <li className="-mb-px mr-1">
-            <a
-              className="bg-white inline-block border-l border-t border-r rounded-t py-2 px-4 text-blue-700 font-semibold"
-              href="#"
-            >
-              Active
+    <header className="flex items-center justify-between py-10 ">
+      <div>
+        <a aria-label="TailwindBlog" href="/">
+          <div className="flex items-center justify-between">
+            <div className="mr-3"></div>
+            <div className="hidden h-6 text-2xl font-semibold sm:block">
+              Iyana M
+            </div>
+          </div>
+        </a>
+      </div>
+      <div className="flex items-center space-x-4 leading-5 sm:space-x-6">
+        {navLinks.map((x) => {
+          return (
+            <a className="hidden font-medium sm:block" href={x.link}>
+              {x.name}
             </a>
-          </li>
-          <li className="mr-1">
-            <a
-              className="bg-white inline-block py-2 px-4 text-blue-500 hover:text-blue-800 font-semibold"
-              href="#"
-            >
-              Tab
-            </a>
-          </li>
-          <li className="mr-1">
-            <a
-              className="bg-white inline-block py-2 px-4 text-blue-500 hover:text-blue-800 font-semibold"
-              href="#"
-            >
-              Tab
-            </a>
-          </li>
-          <li className="mr-1">
-            <a
-              className="bg-white inline-block py-2 px-4 text-gray-400 font-semibold"
-              href="#"
-            >
-              Tab
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </div>
+          );
+        })}
+
+        <div className="mr-5">
+          <div
+            className="relative inline-block text-left"
+            data-headlessui-state=""
+          ></div>
+        </div>
+      </div>
+    </header>
   );
 }
