@@ -2,8 +2,8 @@ export default function HomePage() {
   return (
     <>
       <div className="flex flex-col items-center space-x-2 pt-8">
-        <div className="relative flex flex-col text-gray-700 bg-white shadow-md bg-clip-border rounded-xl w-96">
-          <div className="relative mx-4 mt-4 overflow-hidden text-gray-700 bg-white shadow-lg bg-clip-border rounded-xl h-80">
+        <div className="flex flex-col text-gray-700 bg-white shadow-md bg-clip-border rounded-xl w-96">
+          <div className="mx-4 mt-4 overflow-hidden text-gray-700 bg-white shadow-lg bg-clip-border rounded-xl h-80">
             <img
               src="https://images.pexels.com/photos/1661179/pexels-photo-1661179.jpeg?auto=compress&cs=tinysrgb&w=800"
               alt="profile-picture"
@@ -20,13 +20,13 @@ export default function HomePage() {
           <div className="flex justify-center p-6 pt-2 gap-7">
             <div className="flex space-x-3 pt-6">
               <a
-                className="text-sm transition ease-in-out delay-150 bg-slate-500 hover:-translate-y-1 hover:scale-110 duration-300"
+                className="text-sm text-gray-500 transition hover:text-gray-600"
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://github.com/yayakix"
               >
-                <span className="sr-only">github</span>
-                {/* Github svg */}
+                <span className="sr-only">linkedin</span>
+                {/* Linkedin svg */}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
@@ -57,6 +57,54 @@ export default function HomePage() {
           </div>
         </div>
       </div>
+      <header class="lg:px-16 px-4 bg-white flex flex-wrap items-center py-4 shadow-md">
+        <div class="flex-1 flex justify-between items-center">
+          <a href="#" class="text-xl">
+            Company
+          </a>
+        </div>
+
+        <label for="menu-toggle" class="pointer-cursor md:hidden block">
+          <svg
+            class="fill-current text-gray-900"
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            viewBox="0 0 20 20"
+          >
+            <title>menu</title>
+            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+          </svg>
+        </label>
+        <input class="hidden" type="checkbox" id="menu-toggle" />
+
+        <div class="hidden md:flex md:items-center md:w-auto w-full" id="menu">
+          <nav>
+            <ul class="md:flex items-center justify-between text-base text-gray-700 pt-4 md:pt-0">
+              <li>
+                <a class="md:p-4 py-3 px-0 block" href="#">
+                  AboutUs
+                </a>
+              </li>
+              <li>
+                <a class="md:p-4 py-3 px-0 block" href="#">
+                  Treatments
+                </a>
+              </li>
+              <li>
+                <a class="md:p-4 py-3 px-0 block" href="#">
+                  Blog
+                </a>
+              </li>
+              <li>
+                <a class="md:p-4 py-3 px-0 block md:mb-0 mb-2" href="#">
+                  Contact Us
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
     </>
   );
 }

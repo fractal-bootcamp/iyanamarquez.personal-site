@@ -17,7 +17,7 @@ export default function ProjectsPage() {
     },
 
     {
-      name: "Simon Says",
+      name: "Simonn Says",
       img: "https://images.pexels.com/photos/414648/pexels-photo-414648.jpeg?auto=compress&cs=tinysrgb&w=800",
       link: "https://simonsaysgame23422.netlify.app/",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
@@ -87,7 +87,8 @@ export default function ProjectsPage() {
           );
         })}
       </div>
-      <ul></ul>
+      hello
+      {/* erm */}
     </div>
   );
 }
